@@ -111,7 +111,31 @@
     {{-- === --}}
     <div class="row">  
       <div class="col-md-9"  style=""> 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3 mb-2"> 
+        <div class="row">
+          <div class="col-md-6 p-3">
+            <div  class="form-inline"> 
+              <label for="category"> Category &nbsp;</label>
+              <select name="" id="category" class="form-control form-control-sm">
+                <option value="0">All</option>
+                <option value="1">Food</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6"> 
+            <div class="form-inline my-2 float-right p-2">
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Search</span>
+                </div>
+                <input type="text" class="form-control" id="txt_productname" placeholder="Product Name..." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="btn_go">Go!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3 mb-2"> 
           <!-- Navbar brand -->
           <span class="navbar-brand">Categories:</span>
 
@@ -134,8 +158,11 @@
             </ul>
             <!-- Links -->
             <div class="form-inline my-2">
-              <div class="input-group ">
-                <input type="text" class="form-control" id="txt_productname" placeholder="Product Name" aria-describedby="basic-addon2">
+              <div class="input-group input-group-sm ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Search</span>
+                </div>
+                <input type="text" class="form-control" id="txt_productname" placeholder="Product Name..." aria-describedby="basic-addon2">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary" type="button" id="btn_go">Go!</button>
                 </div>
@@ -143,7 +170,7 @@
             </div>
           </div>
           <!-- Collapsible content -->
-        </nav>
+        </nav> --}}
         
         <div class="btn-toolbar justify-content-between mt-3" role="toolbar" aria-label="Toolbar with button groups">
           <span class="p-2" style="font-size: 90%">
@@ -152,12 +179,10 @@
           </span>
           <div class="btn-group btn-group-sm pagination_master" role="group" aria-label="First group">
             <button type="button" class="btn btn-secondary" id="btn_prev" aria-label="Previous button">Prev</button>
-            <button type="button" class="btn btn-secondary" id="btn_first">first</button>
-
+            <button type="button" class="btn btn-secondary" id="btn_first">first</button> 
             <button type="button" class="btn btn-secondary" id="btn_last">last</button>
             <button type="button" class="btn btn-secondary" id="btn_next" aria-label="Next button">Next</button>
-          </div>
-
+          </div> 
         </div> 
         
 
