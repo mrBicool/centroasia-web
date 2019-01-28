@@ -127,7 +127,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="">Search</span>
                 </div>
-                <input type="text" class="form-control" id="txt_productname" placeholder="Product Name..." aria-describedby="basic-addon2">
+                <input type="text" class="form-control" id="txt_productname" placeholder="By Product Name..." aria-describedby="basic-addon2">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary" type="button" id="btn_go">Go!</button>
                 </div>
