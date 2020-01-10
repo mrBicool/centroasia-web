@@ -11,8 +11,8 @@ Pace.on("done", function(){
 //var url     =   'http://xxx';
 /*----------  OFFLINE  ----------*/
 // var urlAPI  =   'http://localhost:8020/api/';
-var urlAPI  = "http://localhost:8020/api/";
-var url     =   'http://localhost:8021/';
+var urlAPI  = "http://api.test:8001/api/";
+var url     =   'http://web.test:8080/';
 /*=====  End of SYSTEM URL PATH  ======*/
 
 

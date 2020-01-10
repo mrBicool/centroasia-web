@@ -47,7 +47,7 @@ function getProducts(product_name,_current_page,_per_page, category_id){
 			return;
 		}
 
-		//console.log(response); 
+		//console.log(response);  
 		displayProducts(response.data,response.base_url,response.default_img,response.surcharge);
 
 		last_product_name = product_name;
@@ -289,7 +289,12 @@ function displayProducts(items,base_url,default_img,surcharge){
 			img_path = base_url + '/storage/products/' + item.IMG_PATH;
 		}
 
+		if( surcharge == '' || surcharge == null){
+			surcharge = 0;
+		}
+		
 		var unit_price = parseFloat(item.UNITPRICE) + parseFloat(surcharge);
+		console.log(item,unit_price);
 			// $('#shop_items').append(''+ 
 	  //           '<div class="col-sm-6 item">'+
 	  //               '<div class="col-item">'+
