@@ -212,4 +212,8 @@ return [
 
     ],
 
+    /**
+     * Config used by this application
+     */
+    'api_url' => env('API_URL', 'http://localhost')
 ];
