@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>@yield('title') | Datalogic System Corp.</title>
+	<title>@yield('title') | {{ config('app.name') }}</title>
 	
 	<!-- global css -->
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/pace.css">
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
 	<link rel="stylesheet" href="/css/font-awesome.css">
-
+ 
 	<style>
 		
 	</style>
@@ -29,13 +29,17 @@
 	@include('layouts.footer')
 
 	<!-- global js -->
+	<script>
+		var API_URL = '{{ config("app.api_url") }}';
+		var APP_URL = '{{ config("app.url") }}';
+	</script>
 	<script src="/js/jquery-3.3.1.min.js"></script> 
 	<script src="/js/popper.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/pace.min.js"></script>
 	<script src="/js/growl.js"></script>
 	<script src="/js/app.js"></script>
-	<!-- custom css -->
+	<!-- custom css --> 
 	@yield('custom_js')
 	
 </body>
