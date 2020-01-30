@@ -61,7 +61,8 @@ $(document).ready(function(){
 			message 		: message
 		};
 
-		postRequest('mail/contact_inquiry',data,function(data){
+		// postRequest('mail/contact_inquiry',data,function(data){
+		postRequest('contact-us',data,function(data){
 
 			if(data.success == false){
 				showWarning(data.message);
@@ -69,8 +70,8 @@ $(document).ready(function(){
 
 			showSuccess(data.message);
 			setTimeout(function () {
-				// location.reload();
-			}, 500);
+				location.reload();
+			}, 1000);
 
 		});
 		//END
